@@ -14,5 +14,8 @@
 }
 
 body {
-  background-color: var(--black);
+  background: #565656;
+  background: -webkit-radial-gradient(circle, #565656 0%, #02020a 100%);
+  background: radial-gradient(circle, #565656 0%, #02020a 100%);
+  background-repeat: no-repeat;
 }

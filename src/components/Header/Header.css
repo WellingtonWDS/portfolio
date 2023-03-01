@@ -9,6 +9,12 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(165, 71, 255, 0.2);
 }
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .header {
+    background-color: rgba(165, 71, 255, 0.4);
+    backdrop-filter: blur(10px);
+  }
+}
 
 .main-logo {
   width: 80px;
