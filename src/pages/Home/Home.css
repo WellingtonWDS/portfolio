@@ -1,0 +1,14 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #02020a;
+  --purple: #a547ff;
+  --blue: #430aff;
+  --limeBlue: #92d5e6;
+  --lightGreen: #d3f6db;
+}
