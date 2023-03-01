@@ -1,9 +1,12 @@
+import Header from "../../components/Header/Header";
 import "./Home.css";
 
 function Home() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+
+      <section className="Home"></section>
     </div>
   );
 }

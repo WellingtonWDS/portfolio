@@ -12,3 +12,7 @@
   --limeBlue: #92d5e6;
   --lightGreen: #d3f6db;
 }
+
+body {
+  background-color: var(--black);
+}
