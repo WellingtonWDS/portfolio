@@ -1,3 +1,5 @@
+@import "../../styles/global.css";
+
 .main {
   display: flex;
   align-items: center;
@@ -10,46 +12,132 @@
   color: #fff;
 }
 
+.greetings-phrase {
+  font-size: 42px;
+}
+
+.greetings-ocupation {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
 .figure {
   width: 50%;
   padding: 100px 0px 100px 40px;
   color: #fff;
 }
-#box {
-  background-color: rgba(255, 255, 255, 0) !important;
-  transform-style: preserve-3d !important;
-}
+
 .box {
   position: relative;
   background: rgba(255, 255, 255, 0.25);
   width: 400px;
   min-height: 400px;
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 25px 45px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   transform-style: preserve-3d;
-  transform: translateZ(80px);
 }
 
-.elements {
+.squares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 50px;
-  width: 300px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateZ(80px);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 25px 45px rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 25px 45px rgba(48, 48, 48, 0.25);
+  transform: translateZ(40px);
 }
 
 .profile-pic {
-  height: 300px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 100px;
   border-radius: 50%;
+  background: url("./assets/profile-pic.png");
+  background-size: 100%;
+  box-shadow: 0 25px 45px rgba(48, 48, 48, 0.25);
+  transform: translateZ(40px);
+}
+
+.right-square {
+  height: 150px;
+  width: 160px;
+  top: 80px;
+  right: -80px;
+}
+
+.left-square {
+  height: 150px;
+  width: 160px;
+  top: 40px;
+  left: -80px;
+}
+
+.flags {
+  width: 100px;
+}
+
+.card-infos {
+  height: 100px;
+  width: 300px;
+  top: 240px;
+  left: 50px;
+  padding: 10px;
+}
+
+.contact-squares {
+  bottom: 30px;
+  left: -20px;
+  width: 500px;
+  display: flex;
+  position: absolute;
+  gap: 20px;
+  color: #fff;
+}
+
+.contact-logo {
+  width: 20px;
+}
+
+.github,
+.linkedin,
+.cv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  font-size: 14px;
+}
+
+.linkedin {
+  width: 140px;
+}
+
+.github {
+  width: 140px;
+  left: 150px;
+}
+
+.cv {
+  width: 140px;
+  left: 300px;
+}
+
+.github:hover,
+.linkedin:hover,
+.cv:hover {
+  background-color: #e5e5e5;
+  color: #000000;
 }
 
 /* GLITCH ANIMATION */
