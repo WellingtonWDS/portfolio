@@ -29,8 +29,9 @@ class Main extends Component {
               width: "400px",
               borderRadius: "10px",
             }}
-            tiltAngleYInitial="30"
+            // tiltAngleYInitial="30"
             perspective={500}
+            gyroscope="true"
           >
             <div className="profile-pic"></div>
             <div className="squares left-square">
