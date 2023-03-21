@@ -29,6 +29,7 @@ code {
 
 body {
   background: #565656;
+  color: white;
   background: -webkit-radial-gradient(circle, #565656 0%, #02020a 100%);
   background: radial-gradient(circle, #565656 0%, #02020a 100%);
   background-repeat: no-repeat;
